@@ -1,0 +1,60 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de Animais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .dogs-button {
+            background-color: #4CAF50; /* Cor verde para cachorros */
+        }
+        .cats-button {
+            background-color: #2196F3; /* Cor azul para gatos */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha entre Cachorros e Gatos</h1>
+        <p>Com base na história de Ana e seus amados pets, escolha se você prefere os cachorros ou os gatos:</p>
+        <button class="button dogs-button" onclick="showChoice('cachorros')">Cachorros</button>
+        <button class="button cats-button" onclick="showChoice('gatos')">Gatos</button>
+        <div id="result" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        function showChoice(choice) {
+            const resultDiv = document.getElementById('result');
+            if (choice === 'cachorros') {
+                resultDiv.innerHTML = "<h2>Você escolheu os Cachorros!</h2><p>Bolinha e Rex são adoráveis e adoram brincar e correr ao ar livre.</p>";
+            } else if (choice === 'gatos') {
+                resultDiv.innerHTML = "<h2>Você escolheu os Gatos!</h2><p>Mimi, Tico e Lila são maravilhosos e trazem momentos de tranquilidade e carinho.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
+```
+
+
+
+ 
